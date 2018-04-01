@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    # doesn't search src/NoLoad, but requires resources listed explicitly
+    App\:
+        resource: 'src/{Foo,Bar}'
